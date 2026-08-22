@@ -3,6 +3,8 @@ import { Slot, Stack } from "expo-router";
 import { useEffect } from "react";
 import * as SplashScreen from 'expo-splash-screen';
 
+import "./../global.css"
+
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
@@ -30,7 +32,7 @@ export default function RootLayout() {
             />
 
             <Stack.Screen
-                name="MathDetail"
+                name="matches/MatchDetail"
             />
         </Stack>
     )
