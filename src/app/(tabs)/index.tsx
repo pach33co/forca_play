@@ -6,12 +6,12 @@ export default function Index() {
     const router = useRouter();
 
     return (
-        <View className='items-center justify-center flex-1 bg-background' >
-            <Text className='text-sm color-text'>Hello world</Text>
+        <View className='items-center justify-center flex-1' >
+            <Text className='font-regular text-text'>Hello world</Text>
 
             <TouchableOpacity onPress={() => router.push('/matches/MatchDetail')}>
                 <Text
-                    className="text-xl font-bold text-blue-500"
+                    className="text-xl font-bold text-text"
                 >Go to Detail</Text>
             </TouchableOpacity>
 

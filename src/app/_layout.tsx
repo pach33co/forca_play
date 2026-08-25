@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import * as SplashScreen from 'expo-splash-screen';
 
 import "./../global.css"
+import { styles } from "@/shared/styles/Styles";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -25,7 +26,21 @@ export default function RootLayout() {
     }
 
     return (
-        <Stack>
+        <Stack
+        screenOptions={{
+            headerTintColor: styles.colors.text,
+            contentStyle: {
+                backgroundColor: styles.colors.background
+            },
+            headerStyle: {
+                backgroundColor: styles.colors.paper
+            },
+            headerTitleStyle: {
+                color: styles.colors.text,
+                fontFamily: styles.fonts.family.bold
+            },
+        }}
+        >
             <Stack.Screen
                 name="(tabs)"
                 options={{ headerShown: false }}
