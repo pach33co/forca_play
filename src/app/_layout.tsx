@@ -5,6 +5,7 @@ import * as SplashScreen from 'expo-splash-screen';
 
 import "./../global.css"
 import { styles } from "@/shared/styles/Styles";
+import { CustomHeader } from "@/shared/components/CustomHeader";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -28,6 +29,7 @@ export default function RootLayout() {
     return (
         <Stack
         screenOptions={{
+            header: CustomHeader,
             headerTintColor: styles.colors.text,
             contentStyle: {
                 backgroundColor: styles.colors.background
@@ -48,7 +50,11 @@ export default function RootLayout() {
 
             <Stack.Screen
                 name="matches/MatchDetail"
+                options={{
+                    title: 'Detalhes'
+                }}
             />
         </Stack>
     )
 }
+
