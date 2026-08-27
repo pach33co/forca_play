@@ -21,6 +21,7 @@ export default function Layout() {
                 <TabList
                     style={{
                         marginHorizontal: 'auto',
+                        marginBottom: 24,
                         gap: 16,
                         paddingVertical: 8,
                         paddingHorizontal: 16,
