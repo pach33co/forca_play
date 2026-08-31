@@ -12,7 +12,7 @@ export function Section({ children, title }: TSectionProps) {
                 {title}
             </Text>
 
-            <View>
+            <View className='gap-2'>
                 {children}
             </View>
 

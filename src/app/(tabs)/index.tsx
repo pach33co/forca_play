@@ -1,19 +1,78 @@
 import { ContainedButton } from "@/shared/components/button/Contained";
+import { Card } from "@/shared/components/Card";
+import { MatchListItem } from "@/shared/components/home/MatchListItem";
+import { Section } from "@/shared/components/Section";
 import { useRouter } from "expo-router";
-import { Text, TouchableOpacity, View } from "react-native";
+import { Alert, Text, TouchableOpacity, View } from "react-native";
 
 
 export default function Index() {
     const router = useRouter();
 
     return (
-        <View className='flex-1 px-2' >
+        <View className='flex-1 px-2 gap-6' >
             <View className='items-center'>
                 <ContainedButton
                     text='Nova Partida'
                     color='primary'
                 />
             </View>
+
+            <Section title='Partidas em andamento'>
+                <Card>
+                    <MatchListItem
+                        mode="classic"
+                        numberOfRounds={3}
+                        status="ongoing"
+                        currentRound={2}
+                        onPress={() => Alert.alert('Você clicou!')}
+                    />
+                </Card>
+            </Section>
+
+            <Section title='Histórico de Partidas'>
+                <Card>
+                    <MatchListItem
+                        mode="classic"
+                        numberOfRounds={3}
+                        status="lose"
+                        currentRound={2}
+                        onPress={() => Alert.alert('Você clicou!')}
+                    />
+                </Card>
+
+                <Card>
+                    <MatchListItem
+                        mode="classic"
+                        numberOfRounds={3}
+                        status="win"
+                        currentRound={2}
+                        onPress={() => Alert.alert('Você clicou!')}
+                    />
+                </Card>
+
+                <Card>
+                    <MatchListItem
+                        mode="classic"
+                        numberOfRounds={3}
+                        status="lose"
+                        currentRound={2}
+                        onPress={() => Alert.alert('Você clicou!')}
+                    />
+                </Card>
+
+                <Card>
+                    <MatchListItem
+                        mode="classic"
+                        numberOfRounds={3}
+                        status="draw"
+                        currentRound={2}
+                        onPress={() => Alert.alert('Você clicou!')}
+                    />
+                </Card>
+
+            </Section>
+
         </View>
     );
 }
