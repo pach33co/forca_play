@@ -25,7 +25,7 @@ export default function Index() {
                         numberOfRounds={3}
                         status="ongoing"
                         currentRound={2}
-                        onPress={() => Alert.alert('Você clicou!')}
+                        onPress={() => router.push('/matches/MatchDetail')}
                     />
                 </Card>
             </Section>
@@ -37,7 +37,7 @@ export default function Index() {
                         numberOfRounds={3}
                         status="lose"
                         currentRound={2}
-                        onPress={() => Alert.alert('Você clicou!')}
+                        onPress={() => router.push('/matches/MatchDetail')}
                     />
                 </Card>
 
@@ -47,7 +47,7 @@ export default function Index() {
                         numberOfRounds={3}
                         status="win"
                         currentRound={2}
-                        onPress={() => Alert.alert('Você clicou!')}
+                        onPress={() => router.push('/matches/MatchDetail')}
                     />
                 </Card>
 
@@ -57,7 +57,7 @@ export default function Index() {
                         numberOfRounds={3}
                         status="lose"
                         currentRound={2}
-                        onPress={() => Alert.alert('Você clicou!')}
+                        onPress={() => router.push('/matches/MatchDetail')}
                     />
                 </Card>
 
@@ -67,7 +67,7 @@ export default function Index() {
                         numberOfRounds={3}
                         status="draw"
                         currentRound={2}
-                        onPress={() => Alert.alert('Você clicou!')}
+                        onPress={() => router.push('/matches/MatchDetail')}
                     />
                 </Card>
 

@@ -25,7 +25,8 @@ export const styles = {
         },
         family: {
             bold: 'PoppinsBold',
-            regular: 'PoppinsRegular'
+            regular: 'PoppinsRegular',
+            italic: 'PoppinsItalic'
         },
     },
 };

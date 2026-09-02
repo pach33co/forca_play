@@ -25,7 +25,8 @@ module.exports = {
             },
             fontFamily: {
                 bold: styles.fonts.family.bold,
-                regular: styles.fonts.family.regular
+                regular: styles.fonts.family.regular,
+                italic: styles.fonts.family.italic
             },
             fontSize: {
                 sm: styles.fonts.sizes.small,
