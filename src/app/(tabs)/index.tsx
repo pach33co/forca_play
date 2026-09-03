@@ -15,6 +15,7 @@ export default function Index() {
                 <ContainedButton
                     text='Nova Partida'
                     color='primary'
+                    onPress={() => router.push('/matches/NewMatch')}
                 />
             </View>
 
@@ -25,7 +26,7 @@ export default function Index() {
                         numberOfRounds={3}
                         status="ongoing"
                         currentRound={2}
-                        onPress={() => router.push('/matches/MatchDetail')}
+                        onPress={() => router.push('/matches/MatchOngoing')}
                     />
                 </Card>
             </Section>

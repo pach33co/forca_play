@@ -29,20 +29,20 @@ export default function RootLayout() {
 
     return (
         <Stack
-        screenOptions={{
-            header: CustomHeader,
-            headerTintColor: styles.colors.text,
-            contentStyle: {
-                backgroundColor: styles.colors.background
-            },
-            headerStyle: {
-                backgroundColor: styles.colors.paper
-            },
-            headerTitleStyle: {
-                color: styles.colors.text,
-                fontFamily: styles.fonts.family.bold
-            },
-        }}
+            screenOptions={{
+                header: CustomHeader,
+                headerTintColor: styles.colors.text,
+                contentStyle: {
+                    backgroundColor: styles.colors.background
+                },
+                headerStyle: {
+                    backgroundColor: styles.colors.paper
+                },
+                headerTitleStyle: {
+                    color: styles.colors.text,
+                    fontFamily: styles.fonts.family.bold
+                },
+            }}
         >
             <Stack.Screen
                 name="(tabs)"
@@ -53,6 +53,34 @@ export default function RootLayout() {
                 name="matches/MatchDetail"
                 options={{
                     title: 'Detalhes'
+                }}
+            />
+
+            <Stack.Screen
+                name="matches/NewMatch"
+                options={{
+                    title: 'Nova partida'
+                }}
+            />
+
+            <Stack.Screen
+                name="matches/MatchOngoing"
+                options={{
+                    title: 'Partida em andamento'
+                }}
+            />
+
+            <Stack.Screen
+                name="matches/NewRound"
+                options={{
+                    title: 'Nova rodada'
+                }}
+            />
+
+            <Stack.Screen
+                name="matches/MatchEnded"
+                options={{
+                    title: 'Partida encerrada'
                 }}
             />
         </Stack>
